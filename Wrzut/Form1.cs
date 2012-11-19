@@ -18,6 +18,7 @@ namespace Wrzut
     {
 
         public delegate void UpdateListViewDownStatus(int fileDownPercentage, string fileName);
+        public delegate void DownloadWeb();
 
         WebClient WebC = new WebClient();
         //SelectedLinkTagsArray linksTArray = new SelectedLinkTagsArray();
@@ -33,27 +34,43 @@ namespace Wrzut
             //this.delegateLinksAdd = new SimpleDelegate(linksTArray.Add);
         }
 
-        private void searchButton_Click(object sender, EventArgs e)
-        {
-            string webCode = "";
-            try
-            {
-                webCode = WebC.DownloadString("http://www.wrzuta.pl/szukaj/audio/" + this.searchTextBox.Text.Replace(" ", "+") + "/1").Replace("\n", "");
-            }
-            catch (WebException exc)
-            {
-                MessageBox.Show("WebException:\n" + exc.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            this.AddLinks(webCode);
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             this.downloadWorker = new AsyncDownloader(this);
-            listViewDownStatus.ItemAdded += this.downloadWorker.ItemAddedToWorker;
-            this.updateListViewStatus = new UpdateListViewDownStatus( this.UpdateFileDownloadedStatus );           
+            listViewDownStatus.ItemAddedCallback += this.downloadWorker.ItemAddedToWorker;
+            this.updateListViewStatus = new UpdateListViewDownStatus(this.UpdateFileDownloadedStatus);
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            Thread searchingWorkerAsync = new Thread(new ThreadStart(this.DownloadWebPageCodeCallback));
+            searchingWorkerAsync.Start();
+        }
+
+        private void DownloadWebPageCodeCallback()
+        {
+            string webSrc = "";
+
+            if (this.InvokeRequired)
+            { 
+                DownloadWeb dw = new DownloadWeb(DownloadWebPageCodeCallback);     
+                this.Invoke(dw);
+            }
+            else
+            {
+                try
+                {
+                    this.searchButton.Enabled = false;
+                    webSrc = WebC.DownloadString("http://www.wrzuta.pl/szukaj/audio/" + this.searchTextBox.Text.Replace(" ", "+") + "/1").Replace("\n", "");
+                    AddLinks(webSrc);
+                    this.searchButton.Enabled = true;
+
+                }
+                catch (WebException exc)
+                {
+                    MessageBox.Show("WebException:\n" + exc.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void AddLinks(string WebSiteContent)
@@ -174,7 +191,6 @@ namespace Wrzut
         {
             downloadWorker.TerminateThread();    
         }
-
 
     }
 }

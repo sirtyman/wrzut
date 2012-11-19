@@ -20,3 +20,13 @@ E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\bin\Debug\Wrzut
 C:\Users\Marcin\Dropbox\Programowanie\Wrzut\Wrzut\bin\Debug\Wrzut.exe.config
 C:\Users\Marcin\Dropbox\Programowanie\Wrzut\Wrzut\obj\x86\Debug\Wrzut.exe
 C:\Users\Marcin\Dropbox\Programowanie\Wrzut\Wrzut\obj\x86\Debug\Wrzut.pdb
+G:\Wrzut - git\Wrzut\bin\Debug\Wrzut.exe.config
+G:\Wrzut - git\Wrzut\obj\x86\Debug\Wrzut.exe
+G:\Wrzut - git\Wrzut\obj\x86\Debug\Wrzut.pdb
+G:\Wrzut - git\Wrzut\bin\Debug\Wrzut.exe
+G:\Wrzut - git\Wrzut\bin\Debug\Wrzut.pdb
+G:\Wrzut - git\Wrzut\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\Wrzut - git\Wrzut\obj\x86\Debug\Wrzut.Form1.resources
+G:\Wrzut - git\Wrzut\obj\x86\Debug\Wrzut.Properties.Resources.resources
+G:\Wrzut - git\Wrzut\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\Wrzut - git\Wrzut\obj\x86\Debug\GenerateResource.write.1.tlog

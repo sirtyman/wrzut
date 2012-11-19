@@ -36,14 +36,14 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabSearch = new System.Windows.Forms.TabPage();
             this.tabDownProgress = new System.Windows.Forms.TabPage();
-            this.listViewDownStatus = new Wrzut.ListViewDownloadStatus();
-            this.fileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnDown = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.propertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listViewDownStatus = new Wrzut.ListViewDownloadStatus();
+            this.fileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnDown = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.errorCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabSearch.SuspendLayout();
@@ -132,31 +132,6 @@
             this.tabDownProgress.Text = "Download Progress";
             this.tabDownProgress.UseVisualStyleBackColor = true;
             // 
-            // listViewDownStatus
-            // 
-            this.listViewDownStatus.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.fileName,
-            this.columnDown,
-            this.errorCode});
-            this.listViewDownStatus.FullRowSelect = true;
-            this.listViewDownStatus.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listViewDownStatus.Location = new System.Drawing.Point(7, 7);
-            this.listViewDownStatus.Name = "listViewDownStatus";
-            this.listViewDownStatus.Size = new System.Drawing.Size(380, 402);
-            this.listViewDownStatus.TabIndex = 0;
-            this.listViewDownStatus.UseCompatibleStateImageBehavior = false;
-            this.listViewDownStatus.View = System.Windows.Forms.View.Details;
-            // 
-            // fileName
-            // 
-            this.fileName.Text = "File Name";
-            this.fileName.Width = 200;
-            // 
-            // columnDown
-            // 
-            this.columnDown.Text = "Downloaded %";
-            this.columnDown.Width = 100;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -195,6 +170,31 @@
             this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
             this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.propertiesToolStripMenuItem.Text = "Properties";
+            // 
+            // listViewDownStatus
+            // 
+            this.listViewDownStatus.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.fileName,
+            this.columnDown,
+            this.errorCode});
+            this.listViewDownStatus.FullRowSelect = true;
+            this.listViewDownStatus.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.listViewDownStatus.Location = new System.Drawing.Point(7, 7);
+            this.listViewDownStatus.Name = "listViewDownStatus";
+            this.listViewDownStatus.Size = new System.Drawing.Size(380, 402);
+            this.listViewDownStatus.TabIndex = 0;
+            this.listViewDownStatus.UseCompatibleStateImageBehavior = false;
+            this.listViewDownStatus.View = System.Windows.Forms.View.Details;
+            // 
+            // fileName
+            // 
+            this.fileName.Text = "File Name";
+            this.fileName.Width = 200;
+            // 
+            // columnDown
+            // 
+            this.columnDown.Text = "Downloaded %";
+            this.columnDown.Width = 100;
             // 
             // errorCode
             // 

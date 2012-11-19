@@ -8,13 +8,14 @@ namespace Wrzut
 {
     class ListViewDownloadStatus : ListView
     {
-        public EventHandler<ItemsAddedArgs> ItemAdded;
+        public delegate void ListViewDownloadStatusHandler(object oSender, EventArgs args);
+        public event ListViewDownloadStatusHandler ItemAddedCallback;
 
         public void AddItem(ListViewItem item)
         {
             Items.Add(item);
-            if (ItemAdded != null)
-                ItemAdded.Invoke(this, new ItemsAddedArgs(item));
+            if (ItemAddedCallback != null)
+                ItemAddedCallback.Invoke(this, new ItemsAddedArgs(item));
         }
     }
 
