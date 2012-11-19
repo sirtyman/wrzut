@@ -1,0 +1,22 @@
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\bin\Debug\Wrzut.exe
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\bin\Debug\Wrzut.pdb
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\obj\x86\Debug\Wrzut.Form1.resources
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\obj\x86\Debug\Wrzut.Properties.Resources.resources
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\obj\x86\Debug\Wrzut.exe
+C:\Users\mtyman\AppData\Local\Temporary Projects\Wrzut\obj\x86\Debug\Wrzut.pdb
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\obj\x86\Debug\Wrzut.exe
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\obj\x86\Debug\Wrzut.pdb
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\bin\Debug\Wrzut.exe
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\bin\Debug\Wrzut.pdb
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\obj\x86\Debug\Wrzut.Form1.resources
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\obj\x86\Debug\Wrzut.Properties.Resources.resources
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\E\TestComplete-4.1\AirSync4.1\MultipleGUIAlaaarma\Wrzut\Wrzut\bin\Debug\Wrzut.exe.config
+C:\Users\Marcin\Dropbox\Programowanie\Wrzut\Wrzut\bin\Debug\Wrzut.exe.config
+C:\Users\Marcin\Dropbox\Programowanie\Wrzut\Wrzut\obj\x86\Debug\Wrzut.exe
+C:\Users\Marcin\Dropbox\Programowanie\Wrzut\Wrzut\obj\x86\Debug\Wrzut.pdb
